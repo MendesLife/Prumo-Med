@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Geist', system-ui, -apple-system, sans-serif;
+    color: #44555a;
+    background-color: #f7f9f8;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #0c1a1d;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f7f9f8;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5d3d1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0e5a66;
+}
+
+/* Hide scrollbar for carousel */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glassmorphic Floating Pill Navbar */
+.glass-pill-nav {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(12, 26, 29, 0.08);
+  box-shadow: 0 8px 32px rgba(12, 26, 29, 0.06);
+}
+
+/* Floating White Credential Badge */
+.floating-trust-badge {
+  background: #ffffff;
+  border: 1px solid rgba(12, 26, 29, 0.06);
+  box-shadow: 0 16px 40px rgba(12, 26, 29, 0.09);
+}
+
+/* Inset Container Card */
+.inset-canvas {
+  border-radius: 28px;
+  box-shadow: 0 2px 20px rgba(12, 26, 29, 0.03);
+}
+
+@media (min-width: 1024px) {
+  .inset-canvas {
+    border-radius: 32px;
+  }
+}
