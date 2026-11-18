@@ -3,16 +3,16 @@ import { MessageCircle, HelpCircle, ArrowUpRight } from 'lucide-react';
 
 export default function InsurancePlans({ onOpenBooking }) {
   const plans = [
-    { name: 'Unimed', logo: '/images/convenios/unimed.webp' },
-    { name: 'Bradesco Saúde', logo: '/images/convenios/bradesco-saude.webp' },
-    { name: 'SulAmérica', logo: '/images/convenios/sulamerica.webp' },
-    { name: 'Ipasgo Saúde', logo: '/images/convenios/ipasgo-saude.webp' },
-    { name: 'Saúde Caixa', logo: '/images/convenios/saude-caixa.webp' },
-    { name: 'Affego Saúde', logo: '/images/convenios/affego-saude.webp' },
-    { name: 'Postal Saúde', logo: '/images/convenios/postal-saude.webp' },
-    { name: 'Caesan', logo: '/images/convenios/caesan.webp' },
-    { name: 'Mais Saúde', logo: '/images/convenios/mais-saude.webp' },
-    { name: 'Vivacom', logo: '/images/convenios/vivacom.webp' },
+    { name: 'Unimed', logo: '/images/convenios/unimed.png' },
+    { name: 'Bradesco Saúde', logo: '/images/convenios/bradesco-saude.png' },
+    { name: 'SulAmérica', logo: '/images/convenios/sulamerica.png' },
+    { name: 'Ipasgo Saúde', logo: '/images/convenios/ipasgo-saude.png' },
+    { name: 'Saúde Caixa', logo: '/images/convenios/saude-caixa.png' },
+    { name: 'Affego Saúde', logo: '/images/convenios/affego-saude.png' },
+    { name: 'Postal Saúde', logo: '/images/convenios/postal-saude.png' },
+    { name: 'Caesan', logo: '/images/convenios/caesan.png' },
+    { name: 'Mais Saúde', logo: '/images/convenios/mais-saude.png' },
+    { name: 'Vivacom', logo: '/images/convenios/vivacom.png' },
   ];
 
   return (
