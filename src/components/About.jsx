@@ -73,7 +73,7 @@ export default function About({ onOpenBooking }) {
         <div className="absolute inset-0 bg-gradient-to-t from-[#0c1a1d]/80 via-transparent to-transparent"></div>
 
         {/* Floating Pill Badge at Bottom Left (Aveline Style) */}
-        <div className="absolute bottom-6 left-6 sm:bottom-8 sm:left-8 bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-5 shadow-card max-w-sm sm:max-w-md border border-white/20">
+        <div className="absolute bottom-4 left-4 right-4 sm:bottom-8 sm:left-8 sm:right-auto bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-5 shadow-card max-w-sm sm:max-w-md border border-white/20">
           <div className="flex items-center gap-2 text-xs font-medium text-[#0e5a66] uppercase tracking-wider mb-1">
             <ShieldCheck className="w-4 h-4 text-[#0e5a66]" />
             <span>Infraestrutura Hospitalar de Ponta</span>

@@ -50,7 +50,7 @@ export default function Testimonials({ onOpenBooking }) {
   const current = testimonials[currentIdx];
 
   return (
-    <section id="depoimentos" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+    <section id="depoimentos" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 overflow-hidden">
       
       {/* Top Header */}
       <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 pb-10 border-b border-[#eaeeed]">
@@ -129,24 +129,24 @@ export default function Testimonials({ onOpenBooking }) {
       </div>
 
       {/* 4 Thumbs Preview Grid */}
-      <div className="mt-6 grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 overflow-hidden">
         {testimonials.map((item, idx) => (
           <div
             key={idx}
             onClick={() => setCurrentIdx(idx)}
-            className={`p-4 rounded-2xl border transition-all cursor-pointer ${
+            className={`p-3.5 sm:p-4 rounded-2xl border transition-all cursor-pointer overflow-hidden ${
               currentIdx === idx
                 ? 'bg-white border-[#0c1a1d]/20 shadow-sm'
                 : 'bg-[#f3f5f4]/70 border-[#eaeeed] hover:bg-white'
             }`}
           >
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 min-w-0">
               <img 
                 src={item.photo} 
                 alt={item.name} 
-                className="w-9 h-9 rounded-full object-cover"
+                className="w-9 h-9 rounded-full object-cover shrink-0"
               />
-              <div className="overflow-hidden">
+              <div className="overflow-hidden min-w-0 flex-1">
                 <p className="text-xs font-medium text-[#0c1a1d] truncate">{item.name}</p>
                 <p className="text-[10px] text-[#5e6c73] truncate">{item.procedure}</p>
               </div>

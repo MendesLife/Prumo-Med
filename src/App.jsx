@@ -28,7 +28,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#f7f9f8] text-[#44555a] font-sans antialiased selection:bg-[#0e5a66] selection:text-white">
+    <div className="min-h-screen flex flex-col bg-[#f7f9f8] text-[#44555a] font-sans antialiased selection:bg-[#0e5a66] selection:text-white overflow-x-hidden w-full max-w-full">
       {/* Floating Pill Header */}
       <Header onOpenBooking={() => handleOpenBooking('Consulta Geral')} />
 

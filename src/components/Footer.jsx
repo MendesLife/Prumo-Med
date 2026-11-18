@@ -134,7 +134,7 @@ export default function Footer({ onOpenBooking }) {
       </div>
 
       {/* Oversized Brand Watermark (Aveline Signature Feature) */}
-      <div className="select-none pointer-events-none text-center font-bold tracking-tighter text-[#0c1a1d]/[0.035] text-[14vw] leading-none mt-8 -mb-4">
+      <div className="select-none pointer-events-none text-center font-bold tracking-tighter text-[#0c1a1d]/[0.035] text-[14vw] leading-none mt-8 -mb-4 overflow-hidden max-w-full">
         PRUMO MED
       </div>
     </footer>
