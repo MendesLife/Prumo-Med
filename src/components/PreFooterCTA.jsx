@@ -40,7 +40,7 @@ export default function PreFooterCTA({ onOpenBooking }) {
                 className="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-[#0c1a1d] border border-white/80 font-medium text-xs sm:text-sm px-6 py-3.5 rounded-full shadow-sm transition-all"
               >
                 <MessageCircle className="w-4 h-4 text-[#0e5a66]" />
-                <span>WhatsApp: (62) 98237-0012</span>
+                <span>WhatsApp: +55 (62) 98237-0012</span>
               </a>
             </div>
           </div>

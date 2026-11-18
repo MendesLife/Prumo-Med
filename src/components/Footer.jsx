@@ -87,7 +87,7 @@ export default function Footer({ onOpenBooking }) {
                 className="text-[#0e5a66] hover:text-[#083c44] font-medium flex items-center gap-1.5"
               >
                 <MessageCircle className="w-3.5 h-3.5" />
-                <span>(62) 98237-0012</span>
+                <span>+55 (62) 98237-0012</span>
               </a>
               <p className="text-[#5e6c73] font-light">Goiânia - GO</p>
             </div>
