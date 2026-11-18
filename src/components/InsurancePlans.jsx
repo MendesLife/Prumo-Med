@@ -1,18 +1,18 @@
 import React from 'react';
-import { Shield, MessageCircle, CheckCircle2, HelpCircle, ArrowUpRight } from 'lucide-react';
+import { MessageCircle, HelpCircle, ArrowUpRight } from 'lucide-react';
 
 export default function InsurancePlans({ onOpenBooking }) {
   const plans = [
-    { name: 'Unimed', logo: '/images/convenios/unimed.webp', type: 'Consultas e Cirurgias' },
-    { name: 'Bradesco Saúde', logo: '/images/convenios/bradesco-saude.webp', type: 'Internações e Reembolso' },
-    { name: 'SulAmérica', logo: '/images/convenios/sulamerica.webp', type: 'Rede e Reembolso' },
-    { name: 'Ipasgo Saúde', logo: '/images/convenios/ipasgo-saude.webp', type: 'Cobertura Estadual' },
-    { name: 'Saúde Caixa', logo: '/images/convenios/saude-caixa.webp', type: 'Cirurgias e Procedimentos' },
-    { name: 'Affego Saúde', logo: '/images/convenios/affego-saude.webp', type: 'Planos Selecionados' },
-    { name: 'Postal Saúde', logo: '/images/convenios/postal-saude.webp', type: 'Procedimentos Cirúrgicos' },
-    { name: 'Caesan', logo: '/images/convenios/caesan.webp', type: 'Convênio Atendido' },
-    { name: 'Mais Saúde', logo: '/images/convenios/mais-saude.webp', type: 'Rede Credenciada' },
-    { name: 'Vivacom', logo: '/images/convenios/vivacom.webp', type: 'Planos de Saúde' },
+    { name: 'Unimed', logo: '/images/convenios/unimed.webp' },
+    { name: 'Bradesco Saúde', logo: '/images/convenios/bradesco-saude.webp' },
+    { name: 'SulAmérica', logo: '/images/convenios/sulamerica.webp' },
+    { name: 'Ipasgo Saúde', logo: '/images/convenios/ipasgo-saude.webp' },
+    { name: 'Saúde Caixa', logo: '/images/convenios/saude-caixa.webp' },
+    { name: 'Affego Saúde', logo: '/images/convenios/affego-saude.webp' },
+    { name: 'Postal Saúde', logo: '/images/convenios/postal-saude.webp' },
+    { name: 'Caesan', logo: '/images/convenios/caesan.webp' },
+    { name: 'Mais Saúde', logo: '/images/convenios/mais-saude.webp' },
+    { name: 'Vivacom', logo: '/images/convenios/vivacom.webp' },
   ];
 
   return (
@@ -41,32 +41,20 @@ export default function InsurancePlans({ onOpenBooking }) {
         </button>
       </div>
 
-      {/* Grid of the 10 Real Insurance Logos (2x5 layout on desktop) */}
+      {/* Grid of Logos Only (2x5 layout on desktop, clean cards) */}
       <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-5">
         {plans.map((plan, idx) => (
           <div
             key={idx}
-            className="bg-white rounded-2xl p-5 border border-[#eaeeed] hover:border-[#0c1a1d]/20 hover:shadow-card transition-all duration-300 flex flex-col items-center justify-between min-h-[140px] group text-center"
+            className="bg-white rounded-2xl p-6 border border-[#eaeeed] hover:border-[#0c1a1d]/20 hover:shadow-card transition-all duration-300 flex items-center justify-center h-28 sm:h-32 group"
           >
-            {/* Logo Image */}
-            <div className="h-14 w-full flex items-center justify-center p-1">
-              <img
-                src={plan.logo}
-                alt={`Logo ${plan.name}`}
-                className="max-h-12 max-w-[85%] w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-                loading="lazy"
-              />
-            </div>
-
-            {/* Label & Type */}
-            <div className="pt-3 border-t border-[#eaeeed]/80 w-full">
-              <p className="text-xs font-medium text-[#0c1a1d] truncate">
-                {plan.name}
-              </p>
-              <span className="text-[10px] text-[#5e6c73] font-light block truncate mt-0.5">
-                {plan.type}
-              </span>
-            </div>
+            <img
+              src={plan.logo}
+              alt={plan.name}
+              title={plan.name}
+              className="max-h-12 sm:max-h-14 max-w-[85%] w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+            />
           </div>
         ))}
       </div>
