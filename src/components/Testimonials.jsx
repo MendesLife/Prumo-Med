@@ -6,36 +6,36 @@ export default function Testimonials({ onOpenBooking }) {
 
   const testimonials = [
     {
-      name: 'Juliana Meireles',
+      name: 'Fabiana',
       city: 'Goiânia - GO',
-      procedure: 'Artrodese Cervical Minimamente Invasiva',
-      photo: '/images/paciente-juliana.jpg',
-      quote: 'A minha dor no braço terminou na hora que eu acordei da anestesia. A dor nunca mais voltou, e era uma dor 24 horas por dia, eu nem conseguia pegar um garfo. A equipe foi impecável e me devolveu a qualidade de vida.',
-      time: 'Recuperação Imediata'
-    },
-    {
-      name: 'Carolina Freitas',
-      city: 'Goiânia - GO',
-      procedure: 'Artrodese Lombar / Descompressão',
-      photo: '/images/paciente-carolina.jpg',
+      procedure: 'Artrodese Lombar',
+      photo: '/images/paciente-fabiana.webp',
       quote: 'Antes da cirurgia eu sentia uma dormência na perna e uma dor muito forte na batata da perna esquerda e o pé formigando. Tinha muita dificuldade e dor para andar. Após 24 dias da minha cirurgia estou ótima e sem dor.',
       time: '24 dias de pós-operatório'
     },
     {
-      name: 'Marcos Aurélio de Souza',
-      city: 'Anápolis - GO',
+      name: 'Elene',
+      city: 'Goiânia - GO',
       procedure: 'Cirurgia de Neuralgia Trigeminal',
-      photo: '/images/paciente-marcos.jpg',
-      quote: 'Hoje estou muito bem, já tem 4 anos da minha cirurgia. Eu convivia com essa dor terrível há 20 anos. Graças a Deus e ao cuidado minucioso dos cirurgiões estou totalmente livre dessa dor que paralisava minha vida.',
-      time: '4 anos livre da dor'
+      photo: '/images/paciente-elene.webp',
+      quote: 'Eu sentia uma dor muito forte no lado esquerdo do rosto. A dor vinha junto com um “choque”, principalmente na testa. A dor era insuportável. Após 15 dias da minha cirurgia, minha dor melhorou 100%, eu não sinto mais nenhum “choque” e nem dor para mastigar.',
+      time: '15 dias de pós-operatório'
     },
     {
-      name: 'Teresa Cristina Neves',
+      name: 'Maria Pereira',
       city: 'Goiânia - GO',
-      procedure: 'Descompressão Microvascular / Neuralgia',
-      photo: '/images/paciente-teresa.jpg',
-      quote: 'Eu sentia uma dor muito forte no lado esquerdo do rosto. A dor vinha junto com um “choque”, principalmente na testa. A dor era insuportável. Após 15 dias da minha cirurgia, minha dor melhorou 100%, não sinto choque e nem dor para mastigar.',
-      time: 'Melhora de 100%'
+      procedure: 'Cirurgia de Neuralgia Trigeminal',
+      photo: '/images/paciente-maria-pereira.webp',
+      quote: 'Hoje estou muito bem, já tem 4 anos da minha cirurgia. Eu tive essa dor há 20 anos. Graças a Deus estou livre dessa dor.',
+      time: '4 anos de pós-operatório'
+    },
+    {
+      name: 'Maria Mendonça',
+      city: 'Goiânia - GO',
+      procedure: 'Artrodese Cervical',
+      photo: '/images/paciente-maria-mendonca.webp',
+      quote: 'A minha dor no braço terminou na hora que eu acordei da anestesia. A dor nunca mais voltou, e era uma dor 24 horas por dia, eu nem conseguia pegar um garfo.',
+      time: 'Alívio imediato da dor'
     }
   ];
 
